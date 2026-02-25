@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="lvl-bg">
+<head>
+  <title>WORD CONNECT: THE EXTREME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav1">
+      <div class="nav-btn"><a href="index.html">◀ BACK</a></div>
+    </div>
+    <button id="next-lvl-btn" class="next-btn" style="display: none;">NEXT LEVEL ▶</button>
+  </nav>
+
+  <div class="game-wrapper">
+    <div class="pm-badge">
+      <h3>✦ WORD CONNECT ✦</h3>
+    </div>
+
+    <h5 class="msg">*Changes may not be saved once you quit the game or restart the browser</h5>
+
+    <div class="board-card">
+      <div class="word-board" id="word-board"></div>
+      <div id="msg-bar">tap letters to spell a word!</div>
+
+      <div class="input-display" id="input-display">
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+        <div class="input-tile"></div>
+      </div>
+
+      <div class="letter-grid" id="letter-grid">
+        </div>
+
+      <div class="action-row">
+        <button class="action-btn" id="delete-btn"><span class="icon">⌫</span>DEL</button>
+        <button class="action-btn" id="enter-btn"><span class="icon">↵</span>ENTER</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="victory-overlay" class="overlay">
+    <div class="overlay-content">
+      <h1>🎉 AMAZING! 🎉</h1>
+      <p>You've conquered all levels!</p>
+      <button class="play-again-btn" onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
